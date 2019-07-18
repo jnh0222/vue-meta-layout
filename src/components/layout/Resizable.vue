@@ -116,18 +116,6 @@ export default {
 }
 </style>
 <style lang="scss">
-
-// .split-wrap {
-//   position: absolute;
-//   height: calc(100% - #{$headerHeight});
-//   top: $headerHeight;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   z-index: 10;
-//   @include clearfix();
-// }
-
 .split-item {
   float: left;
   height: 100%;
