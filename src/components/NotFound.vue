@@ -1,15 +1,18 @@
 <template>
   <div>
-    <b-modal v-model="dialogVisible" centered title="" size="md" no-close-on-backdrop>
+    <b-modal v-model="dialogVisible" centered title size="md" no-close-on-backdrop>
       <div slot="modal-header">
-        <span class="modal-title">존재하지 않는 페이지</span>
+        <span class="modal-title">Page is not found.</span>
       </div>
       <!-- body -->
-      <div>존재하지 않는 경로 입니다.<br>이전으로 돌아가거나 홈으로 이동합니다.</div>
+      <div>
+        Page is not found.
+        <br />Go back to before page or home.
+      </div>
       <!-- footer -->
       <div slot="modal-footer">
-        <b-button @click="$router.go(-1)">이전으로 돌아가기</b-button>
-        <b-button @click="rootRedirect()">홈으로 가기</b-button>
+        <b-button @click="$router.go(-1)">Go back to before page</b-button>
+        <b-button @click="rootRedirect()">Go home</b-button>
       </div>
     </b-modal>
   </div>
